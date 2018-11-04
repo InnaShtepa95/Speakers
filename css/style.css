@@ -47,10 +47,12 @@
     background-color: #c4c4c4;
 
 }
+
 .line:nth-child(7) {
     background-color: #c4c4c4;
 
 }
+
 /*******************************/
 .program_speakers {
     padding-top: 32px;
@@ -100,6 +102,64 @@
 }
 
 /************************************************/
+.main {
+    color: black;
+}
+
+.part_of_speakers {
+
+    box-sizing: border-box;
+
+    background-color: #69d2e7;
+    padding-bottom: 300px;
+}
+.part_of_speakers:nth-child(1){
+    margin-top: 35px;
+
+}
+.part_of_speakers .time {
+
+    font-size: 24px;
+    float: left;
+    margin-top: 225px;
+    padding-right: 25px;
+}
+
+.part_of_speakers hr {
+    top: 240px;
+    border: solid 1px black;
+    position: relative;
+    z-index: 0;
+    max-width: 80%;
+}
 
 
-/********************************************/
+
+.main .part_of_speakers .description {
+    float: left;
+    padding-right: 95px;
+    margin-top: 40px;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+}
+.main .part_of_speakers .description:last-child{
+    padding-right: 0;
+}
+.main .photo {
+    padding-bottom: 120px;
+    padding-left: 120px;
+    background-color: black;
+    float: left;
+}
+
+.main .description p:nth-child(1) {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.main .description p:nth-child(2) {
+    font-size: 16px;
+    padding-bottom: 30px;
+}
