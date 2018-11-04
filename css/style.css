@@ -1,9 +1,39 @@
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url('../fonts/MyriadProBold.eot');
+    src: url('../fonts/MyriadProBold.eot') format('embedded-opentype'),
+    url('../fonts/MyriadProBold.woff2') format('woff2'),
+    url('../fonts/MyriadProBold.woff') format('woff'),
+    url('../fonts/MyriadProBold.ttf') format('truetype'),
+    url('../fonts/MyriadProBold.svg#MyriadProBold') format('svg');
+}
+
+@font-face {
+    font-family: 'OswaldRegular';
+    src: url('../fonts/OswaldRegular.eot');
+    src: url('../fonts/OswaldRegular.eot') format('embedded-opentype'),
+    url('../fonts/OswaldRegular.woff2') format('woff2'),
+    url('../fonts/OswaldRegular.woff') format('woff'),
+    url('../fonts/OswaldRegular.ttf') format('truetype'),
+    url('../fonts/OswaldRegular.svg#OswaldRegular') format('svg');
+}
+@font-face {
+    font-family: 'OswaldLight';
+    src: url('../fonts/OswaldLight.eot');
+    src: url('../fonts/OswaldLight.eot') format('embedded-opentype'),
+    url('../fonts/OswaldLight.woff2') format('woff2'),
+    url('../fonts/OswaldLight.woff') format('woff'),
+    url('../fonts/OswaldLight.ttf') format('truetype'),
+    url('../fonts/OswaldLight.svg#OswaldLight') format('svg');
+}
+
+
+
 * {
     padding: 0;
     margin: 0;
 
 }
-
 .container {
     max-width: 840px;
     margin: auto;
@@ -22,26 +52,39 @@
 .time {
     margin-top: 32px;
     float: left;
-    display: inline-block;
+
     font-size: 48px;
     font-weight: bold;
     line-height: 33px;
 
 }
+.time:after{
+    content:"" ;
+    clear:both;
+    display: block;
+}
 
 .description {
+    font-family: 'OswaldRegular';
     display: inline-block;
     margin-top: 40px;
     padding-left: 45px;
     font-size: 18px;
 }
 
-.text_description:after {
-    content: '';
-    display: table;
-    clear: both;
+.text_description:after{
+    content:"" ;
+    clear:both;
+    display: block;
 }
+.container h2{
 
+    color: black;
+    line-height: 30px;
+    font-size: 30px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
 /**********************************/
 .line:nth-child(2) {
     background-color: #c4c4c4;
@@ -60,7 +103,7 @@
 }
 
 .speaker {
-    background-color: #00a5e2;
+
     padding-bottom: 210px;
 }
 
@@ -78,11 +121,22 @@
     background-color: black;
     float: left;
 }
+.part_of_speakers .container .speaker .photo:after{
+    content:"" ;
+    clear:both;
+    display: block;
+}
 
 .speaker .time {
+    font-family: 'MyriadProBold';
     padding-left: 14px;
     float: left;
 
+}
+.speaker .time:after{
+    content:"" ;
+    clear:both;
+    display: block;
 }
 
 .speaker .description {
@@ -90,6 +144,11 @@
     float: left;
     padding-left: 35px;
 
+}
+.speaker .description:after{
+    content:"" ;
+    clear:both;
+    display: block;
 }
 
 .speaker .description p:nth-child(1) {
@@ -109,9 +168,9 @@
 .part_of_speakers {
 
     box-sizing: border-box;
-
-    background-color: #69d2e7;
     padding-bottom: 300px;
+    margin-bottom: 10px;
+
 }
 .part_of_speakers:nth-child(1){
     margin-top: 35px;
@@ -121,12 +180,17 @@
 
     font-size: 24px;
     float: left;
-    margin-top: 225px;
+    margin-top: 220px;
     padding-right: 25px;
+}
+.part_of_speakers .time:after{
+    content:"" ;
+    clear:both;
+    display: block;
 }
 
 .part_of_speakers hr {
-    top: 240px;
+    top: 235px;
     border: solid 1px black;
     position: relative;
     z-index: 0;
@@ -138,10 +202,15 @@
 .main .part_of_speakers .description {
     float: left;
     padding-right: 95px;
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 18px;
     position: relative;
     z-index: 1;
+}
+.main .part_of_speakers .description:after{
+    content:"" ;
+    clear:both;
+    display: block;
 }
 .main .part_of_speakers .description:last-child{
     padding-right: 0;
@@ -152,16 +221,22 @@
     background-color: black;
     float: left;
 }
+.main .photo:after{
+    content:"" ;
+    clear:both;
+    display: block;
+}
 
 .main .description p:nth-child(1) {
     text-transform: uppercase;
     font-size: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .main .description p:nth-child(2) {
+    font-family: 'OswaldLight';
     font-size: 16px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 
 }
 /********************************************/
@@ -175,6 +250,12 @@ footer .image{
    padding: 95px 15px;
     max-width: 310px;
     }
+footer .image:after{
+    content:"" ;
+    clear:both;
+    display: block;
+}
+
 .image img{
     width: 100%;
 }
@@ -185,6 +266,11 @@ footer .time {
 
     line-height: 33px;
 
+}
+footer .time:after{
+    content:"" ;
+    clear:both;
+    display: block;
 }
 
 footer .description {
