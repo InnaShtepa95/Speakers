@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 
+
 }
 
 .container {
@@ -9,14 +10,18 @@
     margin: auto;
 }
 
-.black_line {
+.line {
     padding-bottom: 30px;
     box-sizing: border-box;
-    background-color: black;
+
     text-transform: uppercase;
     color: white;
-    border-bottom: solid 2px white;
 
+}
+
+.line:nth-child(1) {
+    background-color: black;
+    border-bottom: solid 2px white;
 }
 
 .time {
@@ -26,7 +31,6 @@
     font-size: 48px;
     font-weight: bold;
     line-height: 33px;
-
 
 }
 
@@ -41,4 +45,58 @@
     content: '';
     display: table;
     clear: both;
+}
+
+/**********************************/
+.line:nth-child(2) {
+    background-color: #c4c4c4;
+
+}
+
+/*******************************/
+.program_speakers {
+    padding-top: 32px;
+    color: black;
+
+}
+.speaker{
+    background-color: #00a5e2;
+    padding-bottom: 210px;
+}
+.speaker:nth-child(1){
+    margin-bottom: 48px;
+}
+.speaker:nth-child(2){
+    margin-bottom: 33px;
+}
+
+.program_speakers .container .speaker .photo {
+    padding-bottom: 210px;
+    padding-right: 210px;
+    background-color: black;
+    float: left;
+}
+
+.speaker .time {
+    padding-left: 14px;
+    float: left;
+
+}
+
+.speaker .description {
+    margin-top: 32px;
+    float: left;
+    padding-left: 35px;
+
+}
+.speaker .description p:nth-child(1) {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.speaker .description p:nth-child(2){
+    font-size: 18px;
+}
+/************************************************/
+.program_speakers .line{
+    background-color: black;
 }
